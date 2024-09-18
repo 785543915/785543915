@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédicteur de Scores</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        h1 { text-align: center; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prédicteur de Scores</h1>
+        <input type="text" id="team1" placeholder="Équipe 1">
+        <input type="text" id="team2" placeholder="Équipe 2">
+        <button onclick="predictScore()">Prédire le Score</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function predictScore() {
+            const team1 = document.getElementById('team1').value;
+            const team2 = document.getElementById('team2').value;
+            // Logique de prédiction à implémenter ici
+            document.getElementById('result').innerText = `Prédiction pour ${team1} vs ${team2}: 2 - 1 (exemple)`;
+        }
+    </script>
+</body>
+</html>
